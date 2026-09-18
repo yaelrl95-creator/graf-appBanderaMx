@@ -1,0 +1,152 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 20px;
+    color: #ffffff;
+    
+    /* Fondo moderno: Gradiente oscuro profundo + patrón de cuadrícula elegante */
+    background-color: #0f172a;
+    background-image: 
+        radial-gradient(at 0% 0%, rgba(14, 165, 233, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(225, 29, 72, 0.15) 0px, transparent 50%),
+        linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 30px 30px, 30px 30px;
+}
+
+h1 {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Tarjeta flotante efecto cristal (Glassmorphism) */
+.main-card {
+    background: rgba(255, 255, 255, 0.07);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    width: 95%;
+    max-width: 950px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Contenedor de las tres columnas */
+.bandera-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    /* Sin separaciones para unir la bandera */
+}
+
+.columna {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Encabezados y controles perfectamente centrados y alineados */
+.header-columna {
+    height: 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.titulo-franja {
+    font-size: 0.9rem;
+    color: #e2e8f0;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.control-color {
+    margin: 2px 0;
+}
+
+input[type="color"] {
+    border: none;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    background: none;
+    border-radius: 50%;
+}
+
+.hex-text {
+    font-size: 0.85rem;
+    color: #94a3b8;
+    font-family: monospace;
+    font-weight: bold;
+}
+
+/* Rectángulos de la bandera con sombras prominentes */
+.rectangulo {
+    width: 100%;
+    height: 380px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+#rectVerde {
+    background-color: #054832;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.rect-blanco {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#rectRojo {
+    background-color: #C70F24;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.escudo {
+    max-width: 65%;
+    max-height: 65%;
+    object-fit: contain;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.15));
+}
+
+/* Pie de página dentro de la tarjeta */
+.integrantes {
+    margin-top: 35px;
+    text-align: center;
+    color: #cbd5e1;
+    line-height: 1.6;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 20px;
+    width: 100%;
+}
+
+.integrantes h3 {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+    color: #f8fafc;
+}

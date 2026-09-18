@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera de México</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main class="main-card">
+        <h1>Bandera de México</h1>
+
+        <div class="bandera-container">
+            <!-- Franja Verde -->
+            <div class="columna">
+                <div class="header-columna">
+                    <p class="titulo-franja">Esperanza</p>
+                    <div class="control-color">
+                        <input type="color" id="inputVerde" value="#054832">
+                    </div>
+                    <p class="hex-text" id="hexVerde">#054832</p>
+                </div>
+                <div class="rectangulo" id="rectVerde"></div>
+            </div>
+
+            <!-- Franja Blanca -->
+            <div class="columna">
+                <div class="header-columna">
+                    <p class="titulo-franja">Unidad</p>
+                    <p class="hex-text">#FFFFFF</p>
+                </div>
+                <div class="rectangulo rect-blanco">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Coat_of_arms_of_Mexico.svg" alt="Escudo Nacional de México" class="escudo">
+                </div>
+            </div>
+
+            <!-- Franja Roja -->
+            <div class="columna">
+                <div class="header-columna">
+                    <p class="titulo-franja">Sangre de nuestros héroes nacionales</p>
+                    <div class="control-color">
+                        <input type="color" id="inputRojo" value="#C70F24">
+                    </div>
+                    <p class="hex-text" id="hexRojo">#C70F24</p>
+                </div>
+                <div class="rectangulo" id="rectRojo"></div>
+            </div>
+        </div>
+
+        <!-- Integrantes -->
+        <footer class="integrantes">
+            <h3>Integrantes del Equipo:</h3>
+            <p>Nombre Alumno 1 - No. Control: 12345678</p>
+            <p>Nombre Alumno 2 - No. Control: 12345679</p>
+            <p>Nombre Alumno 3 - No. Control: 12345680</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
